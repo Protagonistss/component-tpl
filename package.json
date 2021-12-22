@@ -1,15 +1,8 @@
 {
-  "name": "root",
+  "name": "v3-cmp-template",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "bootstrap": "npx lerna bootstrap"
-  },
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
+  "scripts": {},
+  "devDependencies": {},
   "dependencies": {
     "typescript": "^4.5.2",
     "vue": "^3.2.22"
