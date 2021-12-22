@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h-button></h-button>
+  <router-view></router-view>
 </template>
 
 <style>
