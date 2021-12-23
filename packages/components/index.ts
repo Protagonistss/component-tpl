@@ -3,10 +3,10 @@ import { ButtonPlugin } from './button'
 import { InputPlugin } from './input'
 
 const HPlugin: Plugin = {
-  install (app: App) {
+  install(app: App) {
     ButtonPlugin.install?.(app)
     InputPlugin.install?.(app)
-  }
+  },
 }
 
 export default HPlugin

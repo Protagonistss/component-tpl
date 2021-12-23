@@ -1,7 +1,5 @@
 <template>
-  <div>
-    button
-  </div>
+  <div>button</div>
 </template>
 
 <script lang="ts">
@@ -9,12 +7,10 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'HButton',
-  setup () {
+  setup() {
     return {}
-  }
+  },
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
