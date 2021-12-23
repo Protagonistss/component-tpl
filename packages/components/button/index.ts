@@ -1,6 +1,7 @@
 import { App, Plugin } from 'vue'
 import Button from './src/index.vue'
 
+// TODO plugin
 export const ButtonPlugin: Plugin = {
   install(app: App) {
     app.component(Button.name, Button)

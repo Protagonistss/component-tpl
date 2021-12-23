@@ -1,7 +1,7 @@
 {
   "name": "v3-cmp-template",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.11",
   "workspaces": [
     "packages/*",
     "site"
@@ -9,14 +9,15 @@
   "engines": {
     "node": ">=16"
   },
-  "main": "site/main.ts",
-  "publishConfig": {
-    "main": "dist/hdc.umd.js",
-    "module": "dist/hdc.es.js",
-    "typings": "typings/index.d.ts"
-  },
+  "main": "dist/hdc.es.js",
+  "typings": "typings/index.d.ts",
   "license": "MIT",
   "author": "protagonisths",
+  "files": [
+    "dist",
+    "packages",
+    "typings"
+  ],
   "scripts": {
     "site": "vite --config ./build/site.config.ts",
     "build": "vue-tsc --noEmit && vite build",

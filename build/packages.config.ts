@@ -10,7 +10,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, '../packages/components/index.ts'),
       name: 'HDC',
-      formats: ['es', 'umd'],
+      formats: ['es'],
       fileName: (format) => `hdc.${format}.js`
     },
     rollupOptions: {
@@ -26,8 +26,9 @@ export default defineConfig({
   plugins: [
     ...(baseConfig as any).plugins,
     dts({
-      outputDir: 'dist/types',
-      include: ['packages', 'typings']
+      // outputDir: 'dist/types',
+      include: ['typings/*.d.ts'],
+      copyDtsFiles: true
     })
   ]
 })
