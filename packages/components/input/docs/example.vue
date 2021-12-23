@@ -1,11 +1,7 @@
 <template>
-  <h-input></h-input>
+  <hdc-input></hdc-input>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

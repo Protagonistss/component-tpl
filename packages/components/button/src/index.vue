@@ -6,10 +6,10 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'HButton',
+  name: 'HdcButton',
   setup() {
     return {}
-  },
+  }
 })
 </script>
 

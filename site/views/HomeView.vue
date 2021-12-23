@@ -1,8 +1,6 @@
 <template>
   <div class="v-home__wrapper">
-    <aside class="v-home__aside">
-      v-home__aside
-    </aside>
+    <aside class="v-home__aside">v-home__aside</aside>
     <section class="v-home__right">
       <CodePreview></CodePreview>
     </section>

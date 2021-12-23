@@ -1,7 +1,6 @@
 import previewDescription from '../../packages/components/previewDescription.json'
 
-
-export const preViewRoutes = previewDescription.map(cmp => {
+export const preViewRoutes = previewDescription.map((cmp) => {
   return {
     name: cmp.dirName,
     path: `${cmp.enName}`,

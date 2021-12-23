@@ -16,12 +16,13 @@ import '@/assets/styles/prism.css'
 const routeName: unknown = useRoute().name
 const sourceCode = ref('')
 onMounted(async () => {
-  const code = (await import(/* @vite-ignore */ `../../packages/components/${routeName}/docs/example.vue?raw`)).default
+  const code = (
+    await import(/* @vite-ignore */ `../../packages/components/${routeName}/docs/example.vue?raw`)
+  ).default
   sourceCode.value = code
   await nextTick()
   Prism.highlightAll()
 })
-
 </script>
 
 <style lang="scss" scoped>

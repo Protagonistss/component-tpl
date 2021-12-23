@@ -7,8 +7,8 @@ import { preViewRoutes } from './previewRoutes'
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { 
-      path: '/', 
+    {
+      path: '/',
       component: HomeView,
       children: preViewRoutes
     }

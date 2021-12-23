@@ -1,15 +1,15 @@
 <template>
-  <input type="text">
+  <input type="text" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'HInput',
+  name: 'HdcInput',
   setup() {
     return {}
-  },
+  }
 })
 </script>
 

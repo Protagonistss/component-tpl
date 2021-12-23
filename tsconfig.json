@@ -14,8 +14,9 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["site/*"],
+      "packages/*": ["packages/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "packages/**/*.vue", "packages/**/*.ts", "src/env.d.ts"]
+  "include": ["site/**/*.ts", "site/**/*.d.ts", "site/**/*.tsx", "site/**/*.vue", "packages/**/*.vue", "packages/**/*.ts", "site/env.d.ts"]
 }
