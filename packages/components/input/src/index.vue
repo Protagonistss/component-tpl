@@ -1,5 +1,5 @@
 <template>
-  <div>HInput</div>
+  <input type="text">
 </template>
 
 <script lang="ts">

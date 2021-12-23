@@ -5,8 +5,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "npx eslint packages src --fix --ext .ts,.tsx,.vue,.js,.jsx",
-    "prettier": "npx prettier --write ."
+    "format": "pnpm prettier && pnpm lint",
+    "lint": "eslint packages src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -24,6 +25,7 @@
     "sass": "^1.45.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
+    "vite-plugin-md": "^0.11.6",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.29.8"
   }
