@@ -1,6 +1,9 @@
 {
   "name": "v3-cmp-template",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
