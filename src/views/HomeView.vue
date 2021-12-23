@@ -15,7 +15,6 @@ import CodePreview from './CodePreview.vue'
 
 <style lang="scss" scoped>
 .v-home__wrapper {
-  background: $bg-color;
   height: 100vh;
   width: 100vw;
   display: flex;
