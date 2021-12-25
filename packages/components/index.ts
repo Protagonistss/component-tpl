@@ -1,14 +1,4 @@
-import { App, Plugin } from 'vue'
-import { ButtonPlugin } from './button'
-import { InputPlugin } from './input'
+export * from './components'
+import { KdPlugin } from './assembly'
 
-const HPlugin: Plugin = {
-  install(app: App) {
-    ButtonPlugin.install?.(app)
-    InputPlugin.install?.(app)
-  }
-}
-
-export default HPlugin
-export * from './button'
-export * from './input'
+export default KdPlugin

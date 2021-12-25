@@ -9,12 +9,13 @@
   "engines": {
     "node": ">=16"
   },
-  "main": "dist/hdc.es.js",
+  "main": "es/hdc.es.js",
   "typings": "typings/index.d.ts",
   "license": "MIT",
   "author": "protagonisths",
   "files": [
     "dist",
+    "es",
     "packages",
     "typings"
   ],

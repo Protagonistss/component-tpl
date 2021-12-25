@@ -1,1 +1,2 @@
-import { ButtonPlugin } from './button'
+export * from './button'
+export * from './input'
