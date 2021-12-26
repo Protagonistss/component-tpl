@@ -6,7 +6,7 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   ...baseConfig,
   build: {
-    outDir: 'dist',
+    outDir: 'es',
     lib: {
       entry: resolve(__dirname, '../packages/components/index.ts'),
       name: 'HDC',

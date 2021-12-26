@@ -7,7 +7,8 @@
     "site"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=16",
+    "pnpm": ">=6"
   },
   "main": "es/hdc.es.js",
   "typings": "typings/index.d.ts",
@@ -25,7 +26,7 @@
     "build:packages": "vue-tsc --noEmit && vite build --config ./build/packages.config.ts",
     "preview": "vite preview",
     "format": "pnpm prettier && pnpm lint",
-    "lint": "eslint packages src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "lint": "eslint packages site --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write ."
   },
   "peerDependencies": {

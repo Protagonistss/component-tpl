@@ -1,7 +1,7 @@
 ## button
 
 <script setup>
-  import example from './example.vue'
+  import ExampleCmp from './ExampleCmp.vue'
 </script>
 
-<example></example>
+<ExampleCmp></ExampleCmp>

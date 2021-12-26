@@ -1,47 +1,50 @@
-import { defineComponent, openBlock, createElementBlock } from "vue";
+import { defineComponent, openBlock, createElementBlock } from 'vue'
 var _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
+  const target = sfc.__vccOpts || sfc
   for (const [key, val] of props) {
-    target[key] = val;
+    target[key] = val
   }
-  return target;
-};
+  return target
+}
 const _sfc_main$1 = defineComponent({
-  name: "HdcButton",
+  name: 'HdcButton',
   setup() {
-    return {};
+    return {}
   }
-});
+})
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("button", null, "\u6309\u94AE");
+  return openBlock(), createElementBlock('button', null, '\u6309\u94AE')
 }
-var Button = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1]]);
-const ButtonPlugin = {
-  install(app) {
-    app.component(Button.name, Button);
-  }
-};
+var Button = /* @__PURE__ */ _export_sfc(_sfc_main$1, [['render', _sfc_render$1]])
+Button.install = (app) => {
+  app.component(Button.name, Button)
+}
 const _sfc_main = defineComponent({
-  name: "HdcInput",
+  name: 'HdcInput',
   setup() {
-    return {};
+    return {}
   }
-});
-const _hoisted_1 = { type: "text" };
+})
+const _hoisted_1 = { type: 'text' }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("input", _hoisted_1);
+  return openBlock(), createElementBlock('input', _hoisted_1)
 }
-var Input = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
-const InputPlugin = {
+var Input = /* @__PURE__ */ _export_sfc(_sfc_main, [['render', _sfc_render]])
+Input.install = (app) => {
+  app.component(Input.name, Input)
+}
+var components = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: 'Module',
+  Button,
+  Input
+})
+const KdPlugin = {
   install(app) {
-    app.component(Input.name, Input);
+    Object.keys(components).map((key) => {
+      var _a, _b
+      return (_b = (_a = components[key]).install) == null ? void 0 : _b.call(_a, app)
+    })
   }
-};
-const HPlugin = {
-  install(app) {
-    var _a, _b;
-    (_a = ButtonPlugin.install) == null ? void 0 : _a.call(ButtonPlugin, app);
-    (_b = InputPlugin.install) == null ? void 0 : _b.call(InputPlugin, app);
-  }
-};
-export { Button, ButtonPlugin, InputPlugin, HPlugin as default };
+}
+export { Button, Input, KdPlugin as default }

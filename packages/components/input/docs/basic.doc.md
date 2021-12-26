@@ -1,7 +1,7 @@
 ## input
 
 <script setup>
-  import Input from './example.vue'
+  import ExampleCmp from './ExampleCmp.vue'
 </script>
 
-<Input></Input>
+<ExampleCmp></ExampleCmp>
