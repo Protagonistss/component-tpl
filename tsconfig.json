@@ -16,7 +16,7 @@
     "paths": {
       "@/*": ["site/*"],
       "packages/*": ["packages/*"],
-      "typeings/*": ["typings/*"]
+      "typings/*": ["typings/*"]
     }
   },
   "include": ["site/**/*.ts", "site/**/*.d.ts", "site/**/*.tsx", "site/**/*.vue", "packages/**/*.vue", "packages/**/*.ts", "site/env.d.ts"]
