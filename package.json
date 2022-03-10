@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "site": "vite --config ./build/site.config.ts",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --config ./build/site.config.ts",
     "build:packages": "vue-tsc --noEmit && vite build --config ./build/packages.config.ts",
     "preview": "vite preview",
     "format": "pnpm prettier && pnpm lint",
@@ -38,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "@vitejs/plugin-vue": "^2.0.0",
+    "axios": "^0.26.1",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
